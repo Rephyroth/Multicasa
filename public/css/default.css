@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-image: url(../img/background_full.png); 
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#header{
+    background-image: url(../img/header.png);
+    height: 120px;
+    padding: 10px
+    
+}
+
+#header ul li {
+    list-style: none;
+    display: inline;
+    padding: 4px;
+    background-image:url(../img/menu.png) ;
+}
+
+#header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#footer{
+    background-color: rgba(52, 104, 214, 0.479);
+    padding: 20px;
+    height: 40px;
+}
+
+#footer ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#main{
+    position: relative;
+    width: 1022px;
+    background-color: white;
+    left: 0px;
+}
+
+.center{
+    text-align: center;
+}
+
+.error{
+    color: #ac2323;
+}
+
+#logo{
+    display: inline;
+    position: relative;
+    top: 0px;
+    left: 20px;
+}
+#nombre{
+    display: inline;
+    position: relative;
+    top: -10px;
+    left: 40px;
+}
+#opcion{
+    display: inline;
+    position: relative;
+    top: 7px;
+    left: -385px;
+}
+#blanco{
+    display: inline;
+    position: relative;
+    top: 0px;
+    left: 350px;
+}
+#telefono{
+    display: inline;
+    position: relative;
+    top: -5px;
+    left: -200px;
+}
+#llama{
+    display: inline;
+    position: relative;
+    top: -15px;
+    left: -205px;
+}
+
+#menu{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+
+#barra{
+    display: inline;
+    position: relative;
+    top: 55px;
+    left: -10px;
+    width: 500px;
+}
+#barra2{
+    display: inline;
+    position: relative;
+    top: 37px;
+    left: 229px;
+    width: 500px;
+}
+
+.menu2 li {
+    list-style: none;
+    display: inline;
+}
+
+#menu2{
+    display: inline;
+    position: relative;
+    top: -30px;
+    left: 70px;
+}
+
+#marca{
+    display: inline;
+    position: relative;
+    top: -50px;
+    left: 950px;
+    color: white;
+}
+#lateral{
+    position: relative;
+    width: 200px;
+    height: 700px;
+    background-color: rgba(52, 104, 214, 0.479);
+    left: 1025px;
+}
+
+#botones_lateral{
+    background-image: url(../img/menu_azul.png);  
+}
+#botones_lateral ul li{
+    list-style: none;
+     background-image: url(../img/boton_menu.png);
+}
+#botones_lateral ul li a {
+     color: white;
+}
+.botones_lateral li{
+    list-style: none;
+
+}
+#sombra_lateral{
+    position: absolute;
+    top: 0px;
+}
+#btnbuscar{
+    background-image: url(../img/boton_buscar.png);
+}
+.slider{
+    width: 100%;
+    display: flex;
+}
+
+.slider ul{
+    padding: 0;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+.slider li{
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}

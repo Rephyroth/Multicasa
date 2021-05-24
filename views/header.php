@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +37,9 @@
                 <li><a href="<?php echo constant('URL'); ?>contactos">Contactos</a></li>
             </ul>
         </div>
+        
+
+        
         
         <div id="barra">
             <img src="<?php echo constant('URL'); ?>public/img/barra.png">

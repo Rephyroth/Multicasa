@@ -1,3 +1,22 @@
+<?php
+  session_start();
+
+  require 'database.php';
+
+  if (isset($_SESSION['id_usuario'])) {
+    $records = $conn->prepare('SELECT id_Usuario, Nombre,Password,Privilegios FROM usuario WHERE id_usuario = :id');
+    $records->bindParam(':id', $_SESSION['id_usuario']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+    echo($_SESSION['id_usuario']);
+
+    $user = null;
+
+    if (count($results) > 0) {
+      $user = $results;
+    }
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +40,22 @@
             <div id= "texto">
                 <h1>bienvenidos a multicasa</h1>
             </div>
+
+            <div id="login" >
+               <?php if(!empty($user)): ?>
+      <br> Welcome. <?= $user['Nombre']; ?>
+      <br>You are Successfully Logged In
+      <a href="<?php echo constant('URL'); ?>logout">
+        Logout
+      </a>
+    <?php else: ?>
+      <h1>Please Login</h1>
+
+      <a href="<?php echo constant('URL'); ?>login">Login</a>
+      
+    <?php endif; ?>
+        
+        </div>
             <?php require 'views/menu.php'; ?>
         </div>
     <?php require 'views/footer.php'; ?>

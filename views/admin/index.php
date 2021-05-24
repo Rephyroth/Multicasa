@@ -8,10 +8,10 @@
 </head>
 <body>
     <?php require 'views/header.php'; ?>
-    <div id="main">
-        <h1 class = "center error"><?php echo $this -> mensaje; ?></h1>
-        <?php require 'views/menu.php'; ?>
-    </div>
+        <div id="main">
+            
+            <?php require 'views/menu.php'; ?>
+        </div>
     <?php require 'views/footer.php'; ?>
 </body>
 </html>

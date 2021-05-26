@@ -51,14 +51,18 @@
             </center>
             <div id= "informacion">
                 <h3>informacion de Ultíma Hora</h3>
-                <p>nuevo convenvio a casas ecologicas <a href="">ver más</a></p>
+                <p>nuevo convenio a casas ecologicas <a href="">ver más</a></p>
                 <p>conoce nuestro planes <a href="">ver más</a></p>
 
             </div>
             <div id="conectados">
-                <img src="<?php echo constant('URL'); ?>public/img/conectados.png" alt="">Conectados:
+                <img src="<?php echo constant('URL'); ?>public/img/conectados.png" alt="">Conectados: 54
                 <br>
                 <img src="<?php echo constant('URL'); ?>public/img/img_visitas.png" alt="">Visitas:
+                <!-- Contador de visitas -->
+                <center><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+                <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=297579"></a><br><a href='http://www.websmultimedia.com/contador-de-visitas-gratis'></center>
+                <!-- Fin Contador de visitas -->
             </div>
         </div>
 </div>
